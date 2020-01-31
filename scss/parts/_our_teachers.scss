@@ -1,0 +1,123 @@
+#our_teachers {
+    background-image: url('../img/teacher_bg.jpg');
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0px;
+
+    &::before {
+        content: '';
+        background-color: rgba(7, 41, 77, 0.90);
+        z-index: 2;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+    }
+
+    h4 {
+        font-family: $secondary-font;
+        color: $text-color2;
+        padding-bottom: 5px;
+        font-size: $title-size;
+        font-weight: 500;
+        line-height: 1.2;
+    }
+
+    p {
+        color: $text-color2;
+        font-family: $primary-font;
+        font-size: $subtitle-size;
+        margin-bottom: 1rem;
+        line-height: 1.5;
+    }
+
+    .img_grid {
+        z-index: 3;
+        margin-right: 20px;
+        position: relative;
+
+        &:hover {
+            &::before {
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 77%;
+                top: 0px;
+                left: 0px;
+                background-color: rgba(0,0,0,0.5);
+                transition: all 0.5s ease-in-out;
+                // z-index: 4;
+            }
+        }
+
+        img {
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        ul {
+            padding-left: 0px;
+            margin-bottom: 0px;
+            display: flex;
+            justify-content: center;
+            position: absolute;
+            top: 300px;
+            text-align: center;
+            left: 0;
+            right: 0;
+            // opacity: 0;
+            -moz-transform: translateY(-50%);
+            -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+            transition: all 0.5s ease-in-out;
+            z-index: 5;
+
+            li {
+                list-style-type: none;
+                margin-right: 15px;
+
+                a {
+                    color: white;
+                    text-decoration: none;
+
+                    &:hover {
+                        color: $primary-color;
+                    }
+                }
+            }
+        }
+
+        .img_title {
+            background-color: white;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            padding: 10px 0px;
+            text-align: center;
+
+            a {
+                text-decoration: none;
+                color: black;
+                font-size: 22px;
+                font-family: "Rubik", sans-serif;
+                margin-bottom: 0px;
+                font-weight: 500;
+
+                &:hover {
+                    color: $primary-color;
+                    transition: all 0.2s;
+                }
+            }
+
+            span {
+                display: flex;
+                justify-content: center;
+                color: #888888;
+            }
+        }
+    }
+}

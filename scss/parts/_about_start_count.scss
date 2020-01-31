@@ -1,0 +1,38 @@
+#counter_section2 {
+    position: relative;
+    background-color: #F7F7F7;
+    z-index: 1;
+    padding: 100px 0px;
+
+    .count_parts {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 0px;
+        margin-bottom: 0px;
+
+        li {
+            list-style-type: none;
+            text-align: center;
+            z-index: 3;
+
+            img {
+                color: $secondary-color;
+            }
+
+            span {
+                color: $secondary-color;
+                display: flex;
+                justify-content: center;
+                font-size: 50px;
+            }
+
+            p {
+                margin-bottom: 0px;
+                color: $text-color1;
+                font-size: 20px;
+                font-family: "Roboto",sans-serif;
+                font-weight: 300;
+            }
+        }
+    }
+}

@@ -1,0 +1,56 @@
+#about_head_img {
+    background-image: url('../img/about_bg.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 250px;
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.50);
+    }
+
+    .page_name {
+        h1 {
+            color: $text-color2;
+            font-family: $secondary-font;
+            font-weight: bold;
+            margin: 0px;
+        }
+    }
+
+    .breadcrumb {
+        background-color: transparent;
+        margin: 0;
+        padding: 0;
+
+        a {
+            color: $text-color2;
+            text-decoration: none;
+
+            &:hover {
+                transition: all 0.3s;
+                color: $primary-color;
+            }
+        }
+
+        .breadcrumb-item {
+            color: $text-color2;
+
+            &::before {
+                color: $text-color2;
+            }
+        }
+    }
+
+    .pageL, .pageR {
+        margin-top: 10%;
+    }
+}

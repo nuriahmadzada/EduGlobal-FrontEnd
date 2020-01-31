@@ -1,0 +1,109 @@
+#events {
+    padding: 100px 0px;
+    h4 {
+        font-family: $secondary-font;
+        color: $secondary-color;
+        padding-bottom: 5px;
+        font-size: $title-size;
+        font-weight: 500;
+        line-height: 1.2;
+    }
+
+    p {
+        color: $text-color1;
+        font-family: $primary-font;
+        font-size: $subtitle-size;
+        margin-bottom: 1rem;
+        line-height: 1.5;
+    }
+
+    .card {
+        position: relative;
+        box-shadow: 0 0 11px silver;
+        border: none;
+        overflow: hidden;
+        margin-bottom: 25px;
+
+        a {
+            overflow: hidden;
+
+            &:hover {
+                -moz-transform: scale(1.1);
+            -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+            transition: all 0.5s ease-in-out;
+            }
+        }
+
+        .date {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            max-width: 75px;
+            background-color: #fff;
+            text-align: center;
+            width: 100%;
+            border-radius: 5px;
+
+            h5 {
+                font-size: 14px;
+                margin: 0;
+                padding: 5px;
+
+                span {
+                    display: block;
+                    font-size: 24px;
+                }
+            }
+
+            span {
+                display: block;
+                padding: 5px;
+            }
+        }
+    }
+
+    .card-body {
+        padding: 10px;
+        p {
+            margin-bottom: 0px;
+            padding-top: 15px;
+        }
+    }
+
+    .card-title {
+        a {
+            color: $secondary-color;
+            text-decoration: none;
+
+            &:hover {
+                color: $primary-color;
+                transition: all 0.5s;
+            }
+        }
+    }
+
+    .info {
+        padding-bottom: 15px;
+    }
+
+    .info_likes {
+        display: flex;
+        padding-left: 0px;
+        margin-bottom: 0px;
+
+        li {
+            list-style-type: none;
+            margin-right: 20px;
+
+            a {
+                text-decoration: none;
+            }
+            
+            i {
+                color: silver;
+                margin-right: 3px;
+            }
+        }
+    }
+}

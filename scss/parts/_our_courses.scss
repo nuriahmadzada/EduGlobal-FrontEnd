@@ -1,0 +1,151 @@
+#our_courses {
+    padding: 100px 0px;
+    h4 {
+        font-family: $secondary-font;
+        color: $secondary-color;
+        padding-bottom: 5px;
+        font-size: $title-size;
+        font-weight: 500;
+        line-height: 1.2;
+    }
+
+    p {
+        color: $text-color1;
+        font-family: $primary-font;
+        font-size: $subtitle-size;
+        margin-bottom: 1rem;
+        line-height: 1.5;
+    }
+
+    .card {
+        box-shadow: 0 0 11px silver;
+        border: none;
+        margin-bottom: 30px;
+        overflow: hidden;
+
+        .hov_img {
+            overflow: hidden;
+            &:hover {
+                -moz-transform: scale(1.1);
+            -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+            transition: all 0.5s ease-in-out;
+            }
+        }
+        .card-body {
+            .card-title {
+                a {
+                    text-decoration: none;
+                    color: $secondary-color;
+        
+                    &:hover {
+                        color: $hover-color1;
+                        transition: all 1s;
+                    }
+                }
+            }
+
+            .info {
+                display: flex;
+                justify-content: space-between;
+                ul {
+                    display: flex;
+                    padding-left: 0px;
+                    margin-bottom: 0px;
+    
+                    li {
+                        list-style-type: none;
+                        color: #FFBC09;
+                    }
+                }
+
+                .info_likes {
+                    li {
+                        color: $secondary-color;
+                        margin-right: 10px;
+                    }
+                }
+            }
+            
+        }
+
+
+        .card-body_second {
+            display: flex;
+            justify-content: space-between;
+            padding: 1.25rem;
+
+            .card-link {
+                text-decoration: none;
+                color: $secondary-color;
+                font-family: "Rubik",sans-serif;
+                line-height: 40px;
+
+                &:hover {
+                    color: $hover-color1;
+                    transition: all 1s;
+                }
+
+                img {
+                    border-radius: 50%;
+                    width: 40px;
+                    height: 40px;
+                    margin-right: 10px;
+                }
+            }
+
+            span {
+                color: green;
+                background-color: silver;
+                width: 70px;
+                height: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 5px;
+                border: 1px solid green;
+                font-weight: 500;
+                font-family: "Roboto", sans-serif;
+            }
+        }
+    }
+
+    .viewmore {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-top: 20px;
+
+        button {
+            &:hover {
+                background-color: $hover-color1;
+            }
+
+            i {
+                vertical-align: -1px;
+                margin-left: 5px;
+            }
+        }
+    }
+
+    .pagination {
+        li {
+            margin-right: 10px;
+
+            .active {
+                background-color: $primary-color;
+                color: white;
+            }
+            
+            a {
+                color: black;
+
+                &:hover {
+                    background-color: $primary-color;
+                    transition: all 0.3s;
+                    color: $text-color2;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,22 @@
+#coach_training {
+    padding: 50px 0px;
+    background-color: $primary-color;
+
+    .cont {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .training {
+            h2 {
+                color: $text-color2;
+                font-family: "Rubik",sans-serif;
+            }
+
+            p {
+                color: $text-color2;
+                margin-bottom: 0px;
+            }
+        }
+    }
+}

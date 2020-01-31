@@ -1,0 +1,30 @@
+.btn {
+    border: 2px solid;
+    border-radius: 5px;
+    padding: 12px 30px;
+}
+
+.btn-primary {
+    background-color: $primary-color;
+    color: $text-color2;
+    border-color: $primary-color;
+    font-family: $primary-font;
+
+    &:hover {
+        background-color: $hover-color1;
+        border-color: $hover-color1;
+    }
+}
+
+.btn-secondary {
+    border-color: $text-color2;
+    background-color: $primary-color2;
+    color: $text-color2;
+    font-family: $primary-font;
+
+    &:hover {
+        border-color: $text-color2;
+        background-color: $text-color2;
+        color: $primary-color;
+    }
+}
